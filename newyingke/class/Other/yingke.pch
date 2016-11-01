@@ -1,0 +1,14 @@
+//
+//  yingke.pch
+//  newyingke
+//
+//  Created by ma c on 16/11/1.
+//  Copyright © 2016年 DuanXN. All rights reserved.
+//
+
+#ifndef yingke_pch
+#define yingke_pch
+
+#import "MHMacros.h"
+
+#endif /* yingke_pch */

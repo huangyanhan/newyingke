@@ -8,12 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger ,MHItemType){
+
+    MHItemTypeLive = 100,//直播
+    MHItemTypeMe ,//我的
+
+
+};
+
 @class MHTabbar;
+typedef void(^TabBlock)(MHTabbar *tabbar, MHItemType idx);
+
 @protocol MHTabbarDelegate <NSObject>
 
-- (void)tabbar:(MHTabbar *)tabbar clickButton:(NSUInteger)idx;
+- (void)tabbar:(MHTabbar *)tabbar clickButton:(MHItemType)idx;
 
 @end
+
+
 @interface MHTabbar : UIView
+
+@property (nonatomic, weak)id<MHTabbarDelegate>delegate;
+@property (nonatomic, copy)TabBlock block;
 
 @end
