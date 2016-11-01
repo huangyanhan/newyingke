@@ -20,6 +20,8 @@
 		04C10A561DC897F400B33A38 /* MHMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C10A541DC897F400B33A38 /* MHMeViewController.m */; };
 		04C10A571DC897F400B33A38 /* MHMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C10A551DC897F400B33A38 /* MHMeViewController.xib */; };
 		04C10A5A1DC8B04600B33A38 /* MHBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C10A591DC8B04600B33A38 /* MHBaseNavigationController.m */; };
+		04C10A5E1DC8DF6B00B33A38 /* MHLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C10A5C1DC8DF6B00B33A38 /* MHLaunchViewController.m */; };
+		04C10A5F1DC8DF6B00B33A38 /* MHLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C10A5D1DC8DF6B00B33A38 /* MHLaunchViewController.xib */; };
 		52B4B96CB7122DC81F2CC52F /* libPods-newyingke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CBB5B2538BB8EA62285B4D /* libPods-newyingke.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,9 @@
 		04C10A551DC897F400B33A38 /* MHMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHMeViewController.xib; sourceTree = "<group>"; };
 		04C10A581DC8B04600B33A38 /* MHBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHBaseNavigationController.h; sourceTree = "<group>"; };
 		04C10A591DC8B04600B33A38 /* MHBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHBaseNavigationController.m; sourceTree = "<group>"; };
+		04C10A5B1DC8DF6B00B33A38 /* MHLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLaunchViewController.h; sourceTree = "<group>"; };
+		04C10A5C1DC8DF6B00B33A38 /* MHLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLaunchViewController.m; sourceTree = "<group>"; };
+		04C10A5D1DC8DF6B00B33A38 /* MHLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHLaunchViewController.xib; sourceTree = "<group>"; };
 		13D3F255C47E1230A5497D55 /* Pods-newyingke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newyingke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newyingke/Pods-newyingke.debug.xcconfig"; sourceTree = "<group>"; };
 		149BBDB2B37A48B63525E9AE /* Pods-newyingke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newyingke.release.xcconfig"; path = "Pods/Target Support Files/Pods-newyingke/Pods-newyingke.release.xcconfig"; sourceTree = "<group>"; };
 		E4CBB5B2538BB8EA62285B4D /* libPods-newyingke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newyingke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +229,9 @@
 		04C10A2E1DC70E0A00B33A38 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				04C10A5B1DC8DF6B00B33A38 /* MHLaunchViewController.h */,
+				04C10A5C1DC8DF6B00B33A38 /* MHLaunchViewController.m */,
+				04C10A5D1DC8DF6B00B33A38 /* MHLaunchViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -417,6 +425,7 @@
 			files = (
 				04C10A0D1DC70A9300B33A38 /* LaunchScreen.storyboard in Resources */,
 				04C10A0A1DC70A9300B33A38 /* Assets.xcassets in Resources */,
+				04C10A5F1DC8DF6B00B33A38 /* MHLaunchViewController.xib in Resources */,
 				04C10A521DC897E200B33A38 /* MHMineViewController.xib in Resources */,
 				04C10A081DC70A9300B33A38 /* Main.storyboard in Resources */,
 				04C10A571DC897F400B33A38 /* MHMeViewController.xib in Resources */,
@@ -478,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C10A5E1DC8DF6B00B33A38 /* MHLaunchViewController.m in Sources */,
 				04C10A471DC710EA00B33A38 /* MHTabbar.m in Sources */,
 				04C10A511DC897E200B33A38 /* MHMineViewController.m in Sources */,
 				04C10A401DC70E0A00B33A38 /* AppDelegate.m in Sources */,

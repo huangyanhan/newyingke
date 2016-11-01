@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger ,MHItemType){
-
-    MHItemTypeLive = 100,//直播
+    MHItemTypeLaunch = 10,//直播
+    MHItemTypeLive = 100,//主要
     MHItemTypeMe ,//我的
 
 
