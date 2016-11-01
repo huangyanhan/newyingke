@@ -36,8 +36,10 @@
     if (self) {
         
         [self addSubview:self.tabbarView];
+        
         for (NSInteger i = 0; i < self.distArray.count; i++) {
             UIButton *item = [UIButton buttonWithType:UIButtonTypeCustom];
+            
             [item setImage:[UIImage imageNamed:self.distArray[i]] forState:(UIControlStateNormal)];
             [item setImage:[UIImage imageNamed:[self.distArray[i] stringByAppendingString:@"_p"]] forState:(UIControlStateSelected)];
             
@@ -48,6 +50,19 @@
         }
     }
     return self;
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    
+    self.tabbarView.frame = self.bounds;
+    CGFloat width = self.bounds.size.width / self.distArray.count;
+    for (NSInteger i = 0; i < [self subviews].count; i++) {
+        UIButton *btn = [self subviews][i];
+        if ([btn isKindOfClass:[UIButton class]]) {
+            btn.frame = CGRectMake((btn.tag - MHItemTypeLive)*width, 0, width, self.bounds.size.height);
+        }
+    }
 }
 
 - (void)clickButton:(UIButton *)button{

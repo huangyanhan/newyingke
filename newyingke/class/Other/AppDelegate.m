@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MHTabbarViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    MHTabbarViewController *tabar = [[MHTabbarViewController alloc]init];
+    self.window.rootViewController = tabar;
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }
