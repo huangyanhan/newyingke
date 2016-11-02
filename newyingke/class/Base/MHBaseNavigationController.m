@@ -10,13 +10,18 @@
 
 @interface MHBaseNavigationController ()
 
+
 @end
 
 @implementation MHBaseNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIImage *backImage = [UIImage imageNamed:@"global_tittle_bg"];
+    [self.navigationBar setBackgroundImage:backImage forBarMetrics:UIBarMetricsDefault];
+    self.navigationBar.tintColor = [UIColor whiteColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
